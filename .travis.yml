@@ -1,13 +1,7 @@
 language: node_js
 node_js:
   - "12.13"
-
-
-deploy:
-  provider: npm
-  email: souvikde.ns@gmail.com
-  api_key:
-    secure: snfwbQScipx8IhWofMCEfeHAhLf41gtA2dEF6GqNWK/ceNLspTQhFOgw9LroDrAftjnQxm3F3L0RJWzFEaUvDOKAjsyDgUcxrq5+f1Dg+KfIoqxcS+LFIjWRve3XREycCOG27Fv35gEflc909QSrgD8ThGOXaGiTKCQw7RQ2/Om6yBD96sXhjKEkGKDWFj6gOG4eLR3wk7pjrqEEgk3W5xMMbsajJvAP3PuI2BwbIKUpV3beSzP/tg3wVHed2IdRDvZrXsBUjB1FUXPZNnW8jAA4yDuzdQr4fVkfTHluSzpn3bM06G3eCOFzm4xEfpY/xAP7HhNVBTyZ6XoLLu4B2VMACd1KVrsXAIE0lPecc43M2jGUWU91tmjpOKRTOE5tL5KYgrGifXPUJy4jFEaOKT1OlTStcUkpE4hwmKXGdVuQrC62pdIGHNfu3LksN+GkyRLUP9AGHjzjDv3JG17jghfaN1g6u7r5H6eHxuMcyQu6vZAXfGvVwb+jM0YGHKHrgJs+NzHoPknAuaiCUBxivAxS+NY6E6aNVKfpqMHsQrs3j11pUmWjWockO2XQIe7G5xAVbARpBuWEm3s7e2IQgyvkrCF5ukB6pA/ju0pcXB7HJbmSsjv70mgnQEeML+kQNaoX0x3fBcIvemdbL2dYJK0IKDnzjkLzPkw+LtAK6E0=
-  on:
-    repo: Souvikns/airtable-forms
-    branch: production
+notifications:
+  email: false
+script:
+  - npm test

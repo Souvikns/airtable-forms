@@ -59,5 +59,21 @@ class AirForms {
 
     }
 
+
+    async getOneField({id}){
+        
+        let data = await this.base(this.base_name).find(id)
+
+        return data
+    }
+
+    async putData({fieldArray}){
+        const data = await this.base(this.base_name).create(fieldArray)
+
+        return data
+    }
+
 }
 
+
+module.exports = AirForms

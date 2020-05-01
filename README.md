@@ -29,6 +29,18 @@ forms.listData().then(data=>{
     console.log(data)
 })
 
+async function InsertIntoTable(){
+    let data = await form.putData({fieldArray: [{
+        "fields": {
+            "Date": "2020-04-24",
+            "Rating": "5",
+            "Comment": "Verry good"
+          }
+    }]})
+
+    // data contains the array of the ids that putdata returns 
+}
+
 ```
 
 

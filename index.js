@@ -10,7 +10,6 @@
  */
 
 const Airtable = require('airtable')
-const {API_KEY,BASE_KEY,BASE_NAME} = require('./config')
 
 class AirForms {
     constructor({ api_key, base_key, base_name }) {

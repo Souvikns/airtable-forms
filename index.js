@@ -72,6 +72,17 @@ class AirForms {
         return data
     }
 
+    async updateData({fieldArray}){
+        const data = await this.base(this.base_name).update(fieldArray)
+
+        return data
+    }
+
+    async deleteData({ids}){
+        let count = await this.base(this.base_name).destroy(ids)
+
+        return count
+    }
 }
 
 
